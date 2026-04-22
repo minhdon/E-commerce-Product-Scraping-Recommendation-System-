@@ -1,0 +1,161 @@
+.pageBackground {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.searchContainer {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* --- SIDEBAR TRÁI --- */
+.filterSidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.filterTitle {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+}
+
+.filterIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.filterGroup {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filterGroup h3 {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.filterGroup label {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.showMoreBtn {
+  background: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.priceRangeInputs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.priceRangeInputs input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 2px;
+  outline: none;
+}
+
+.applyBtn {
+  background-color: #ee4d2d;
+  color: #fff;
+  border: none;
+  padding: 8px 0;
+  border-radius: 2px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* --- MAIN CONTENT PHẢI --- */
+.mainContent {
+  flex: 1;
+}
+
+.searchHeaderArea {
+  margin-bottom: 15px;
+}
+
+.searchTitle {
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.searchTitle span {
+  color: #ee4d2d;
+}
+
+.sortBar {
+  background-color: #ededed;
+  padding: 13px 20px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sortLabel {
+  font-size: 14px;
+  color: #555;
+  margin-right: 10px;
+}
+
+.sortBtn {
+  background: #fff;
+  border: 0;
+  padding: 9px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.sortBtn.active {
+  background: #ee4d2d;
+  color: #fff;
+}
+
+.sortSelect {
+  background: #fff;
+  border: 0;
+  padding: 9px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  min-width: 150px;
+}
+
+.productGridWrapper {
+  /* ProductGrid của bạn sẽ tự đổ vào đây */
+}
