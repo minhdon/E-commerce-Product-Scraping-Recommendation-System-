@@ -1,7 +1,7 @@
-from database.session import Base
+from app.database.session import Base
 from sqlalchemy import Column,Integer,String,Float,Text,Double
 class Product(Base):
-    __tablename__="merged_data"
+    __tablename__="products"
 
     itemId=Column(Integer,primary_key=True,index=True)
     name=Column(Text)

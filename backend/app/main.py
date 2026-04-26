@@ -3,7 +3,7 @@ import subprocess
 from fastapi import FastAPI
 app = FastAPI()
 from fastapi.responses import StreamingResponse
-from api.v1 import crawler,transform,load,recommend,getProduct
+from app.api.v1 import crawler,transform,load,recommend,getProduct
 from fastapi.middleware.cors import CORSMiddleware
 origins = [
     "http://localhost:5173", 
@@ -17,7 +17,7 @@ app.add_middleware(
     allow_methods=["*"], # Cho phép tất cả GET, POST, PUT, DELETE...
     allow_headers=["*"], # Cho phép tất cả các Header
 )
-SCRIPT_PATH = r"../../crawler/scripts/cookie.py"
+SCRIPT_PATH = r"/app/crawler/scripts/cookie.py"
 @app.get("/")
 def read_root():
     return {"message": "Hello, World!"}

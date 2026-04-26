@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import OneHotEncoder
 # ... (các hàm clean_data, clean_product_name, preprocess_vietnamese_text bạn giữ nguyên)
-from .processor import clean_data,calculate_cosine_sim,clean_product_name,preprocess_vietnamese_text
+from app.services.processor import clean_data,calculate_cosine_sim,clean_product_name,preprocess_vietnamese_text
 class RecommenderSystem:
     def __init__(self, data_path):
         self.df = pd.read_csv(data_path)

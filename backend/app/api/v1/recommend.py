@@ -1,11 +1,11 @@
 from fastapi import APIRouter, HTTPException
-from services.recommend import RecommenderSystem
+from app.services.recommend import RecommenderSystem
 
 # Khởi tạo router
 router = APIRouter()
 
 # Khởi tạo instance của Recommender (Nên dùng Dependency Injection hoặc global)
-recommender = RecommenderSystem(r"../../crawler/data/merged_data.csv")
+recommender = RecommenderSystem(r"/app/crawler/data/merged_data.csv")
 
 @router.get("/{item_id}")
 async def get_recommendation(item_id: int):

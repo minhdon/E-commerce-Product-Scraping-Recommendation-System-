@@ -87,7 +87,6 @@ const Index = () => {
         <section className={styles.dailyDiscoverBlock}>
           <div className={styles.stickySectionHeader}>
             <h2 className={styles.dailyDiscoverTitle}>GỢI Ý HÔM NAY</h2>
-            <div className={styles.headerUnderline}></div>
           </div>
 
           {loading ? (
