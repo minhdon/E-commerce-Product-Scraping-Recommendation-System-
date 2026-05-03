@@ -1,3 +1,20 @@
 lazada_profile/
 node_modules/
 .env
+# Bỏ qua môi trường ảo (Cực kỳ quan trọng)
+venv/
+env/
+
+# Bỏ qua các file Model AI nặng
+*.safetensors
+*.bin
+*.pt
+*.pkl
+*.h5
+
+# Bỏ qua cache của Python
+__pycache__/ 
+*.pyc
+
+# Bỏ qua file môi trường
+.env

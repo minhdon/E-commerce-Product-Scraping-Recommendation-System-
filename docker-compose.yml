@@ -9,6 +9,8 @@ services:
       - PYTHONPATH=/app
       - DATABASE_URL=postgresql://neondb_owner:npg_hLYef9pVu8dj@ep-round-fire-aoslwbbu-pooler.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
 
+    volumes:
+      - ./backend:/app
   frontend: # <--- CHÚ Ý: KÉO NÓ RA NGOÀI CHO THẲNG HÀNG VỚI BACKEND
     build:
       context: ./Frontend

@@ -3,7 +3,7 @@ import subprocess
 from fastapi import FastAPI
 app = FastAPI()
 from fastapi.responses import StreamingResponse
-from app.api.v1 import crawler,transform,load,recommend,getProduct
+from app.api.v1 import crawler,transform,load,recommend,getProduct,comment
 from fastapi.middleware.cors import CORSMiddleware
 origins = [
     "http://localhost:5173", 
@@ -42,3 +42,4 @@ app.include_router(
     tags=["recommendations"]
 )
 app.include_router(getProduct.router, prefix="/products", tags=["products"])
+app.include_router(comment.router, prefix="/api/v1/comments", tags=["Comments"])
